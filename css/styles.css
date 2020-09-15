@@ -1,0 +1,45 @@
+/* ==== BASE STYLES === */
+
+body {
+    background :black url("../img/background.jpg") no-repeat center / cover;
+}
+
+/* ==== CLASS STYLES === */
+
+.searchbox {
+    display: grid;
+    max-width: 500px;
+    margin: 20px auto 20px auto;
+    width: 70%;
+}
+
+.gal {
+    display: grid;
+    max-width: 900px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px 20px;
+    margin: 0 auto 0 auto;
+}
+
+/* ==== PSEUDO CLASSES === */
+
+.images:hover {
+    transform: scale(1.1) rotate3d(1,1,0, 50deg);
+    transition-duration: .7s;
+    transition-timing-function: ease-in-out;
+    
+}
+
+/* ==== ID STYLES === */
+
+#search {
+    font-family: 'Indie Flower', cursive;
+    border: 2px #d3d3d3 solid;
+    border-radius: 5px;
+    padding: 10px 0 10px 10px;
+    height: 50px;
+    font-size: 20px;
+    background: #F2F2F2;
+    letter-spacing: 2px;
+}
